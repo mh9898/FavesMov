@@ -13,6 +13,11 @@
 		711891A91CEB59630055EE8D /* FavesMoives.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 711891A71CEB59630055EE8D /* FavesMoives.xcdatamodeld */; };
 		711891AB1CEB59630055EE8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711891AA1CEB59630055EE8D /* Assets.xcassets */; };
 		711891AE1CEB59630055EE8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711891AC1CEB59630055EE8D /* LaunchScreen.storyboard */; };
+		711891B61CEB63500055EE8D /* MoiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711891B51CEB63500055EE8D /* MoiveCell.swift */; };
+		7119EAFF1CEC8E360096AD18 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119EAFE1CEC8E360096AD18 /* PostVC.swift */; };
+		7119EB051CEC90190096AD18 /* Moive+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119EB031CEC90190096AD18 /* Moive+CoreDataProperties.swift */; };
+		7119EB061CEC90190096AD18 /* Moive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119EB041CEC90190096AD18 /* Moive.swift */; };
+		7119EB081CECC2000096AD18 /* DetailMoiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119EB071CECC2000096AD18 /* DetailMoiveVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		711891AA1CEB59630055EE8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		711891AD1CEB59630055EE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		711891AF1CEB59630055EE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711891B51CEB63500055EE8D /* MoiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoiveCell.swift; sourceTree = "<group>"; };
+		7119EAFE1CEC8E360096AD18 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		7119EB031CEC90190096AD18 /* Moive+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Moive+CoreDataProperties.swift"; path = "../Moive+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7119EB041CEC90190096AD18 /* Moive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Moive.swift; path = ../Moive.swift; sourceTree = "<group>"; };
+		7119EB071CECC2000096AD18 /* DetailMoiveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMoiveVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +66,10 @@
 		7118919F1CEB59630055EE8D /* FavesMoives */ = {
 			isa = PBXGroup;
 			children = (
+				7119EB021CEC8E5B0096AD18 /* Controller */,
+				7119EB011CEC8E4B0096AD18 /* View */,
+				7119EB001CEC8E3A0096AD18 /* Model */,
 				711891A01CEB59630055EE8D /* AppDelegate.swift */,
-				711891A21CEB59630055EE8D /* ViewController.swift */,
 				711891A41CEB59630055EE8D /* Main.storyboard */,
 				711891AA1CEB59630055EE8D /* Assets.xcassets */,
 				711891AC1CEB59630055EE8D /* LaunchScreen.storyboard */,
@@ -65,6 +77,33 @@
 				711891A71CEB59630055EE8D /* FavesMoives.xcdatamodeld */,
 			);
 			path = FavesMoives;
+			sourceTree = "<group>";
+		};
+		7119EB001CEC8E3A0096AD18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7119EB031CEC90190096AD18 /* Moive+CoreDataProperties.swift */,
+				7119EB041CEC90190096AD18 /* Moive.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7119EB011CEC8E4B0096AD18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				711891B51CEB63500055EE8D /* MoiveCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7119EB021CEC8E5B0096AD18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				711891A21CEB59630055EE8D /* ViewController.swift */,
+				7119EAFE1CEC8E360096AD18 /* PostVC.swift */,
+				7119EB071CECC2000096AD18 /* DetailMoiveVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7119EB051CEC90190096AD18 /* Moive+CoreDataProperties.swift in Sources */,
 				711891A31CEB59630055EE8D /* ViewController.swift in Sources */,
+				7119EB081CECC2000096AD18 /* DetailMoiveVC.swift in Sources */,
 				711891A11CEB59630055EE8D /* AppDelegate.swift in Sources */,
+				711891B61CEB63500055EE8D /* MoiveCell.swift in Sources */,
 				711891A91CEB59630055EE8D /* FavesMoives.xcdatamodeld in Sources */,
+				7119EAFF1CEC8E360096AD18 /* PostVC.swift in Sources */,
+				7119EB061CEC90190096AD18 /* Moive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +334,7 @@
 				711891B41CEB59630055EE8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
